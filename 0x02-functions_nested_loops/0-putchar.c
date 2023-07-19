@@ -1,14 +1,36 @@
 #include <unistd.h>
+#include "main.h"
+
 /**
- * main - Prints _putchar followed by a new line
+ * _putchar - Prints a character to standard output
+ * @c: The character to be printed
  *
- * Return: Always 0 (Success)
+ * Return: On success, return the character printed
+ * On error return -1 and set errno appropriately.
  */
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+/**
+ * main - Entry point
+ *
+ * Return - Always 0 (Success)
+ */
+
 int main(void)
 {
-	const char message[] = "_putchar\n";
-
-	write(1, message, sizeof(message) - 1);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }

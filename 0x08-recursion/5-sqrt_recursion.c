@@ -14,7 +14,7 @@ int check(int p, int i)
 		return (p);
 	if (p * p > i)
 		return (-1);
-	return check(p + 1, i);
+	return (check(p + 1, i));
 }
 /**
  * _sqrt_recursion - returns the square root of number
@@ -27,5 +27,5 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
-	return check(1, n);
+	return (check(1, n));
 }

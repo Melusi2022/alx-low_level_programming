@@ -3,7 +3,7 @@
 /**
  * get_nodeint_at_index - returns the node at a certain index in a linked list
  * @head: first node in a linked list
- * @index: index of the node to return 
+ * @index: index of the node to return
  * Return: node to the pointer, or NULL
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)

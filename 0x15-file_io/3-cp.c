@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <fcntl.h>
 #include <stdlib.h>
 
 char *create_buffer(char *file);

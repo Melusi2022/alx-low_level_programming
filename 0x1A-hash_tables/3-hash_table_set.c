@@ -30,7 +30,7 @@ hash_node_t *key_val(hash_node_t *node, const char *key, const char *value)
 			if (strcmp(key, tmp_tmp->key) == 0)
 			{
 				free(tmp_tmp->value);
-	      			tmp_tmp->value = strdup(value);
+				tmp_tmp->value = strdup(value);
 				return (node);
 			}
 			tmp_tmp = tmp_tmp->next;
